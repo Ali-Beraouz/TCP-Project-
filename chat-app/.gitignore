@@ -1,0 +1,12 @@
+# Build output
+target/
+dist/
+out/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

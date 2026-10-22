@@ -1,0 +1,212 @@
+/* TCP Chat Server - JavaFX stylesheet */
+
+.root {
+    -fx-font-size: 13px;
+    c-bg: #F3F4F7;
+    c-card: #FFFFFF;
+    c-border: #E2E5EB;
+    c-text: #1F2430;
+    c-muted: #6B7280;
+    c-accent: #2563EB;
+}
+
+.server-root {
+    -fx-background-color: c-bg;
+}
+
+/* ---------- header ---------- */
+.header {
+    -fx-background-color: c-card;
+    -fx-background-radius: 14;
+    -fx-border-color: c-border;
+    -fx-border-radius: 14;
+    -fx-padding: 16 20 16 20;
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: c-text;
+}
+
+.subtitle {
+    -fx-text-fill: c-muted;
+    -fx-font-size: 12px;
+}
+
+.status-pill {
+    -fx-background-color: #F1F5F9;
+    -fx-background-radius: 20;
+    -fx-padding: 6 14 6 12;
+}
+
+.status-text {
+    -fx-font-weight: bold;
+    -fx-text-fill: c-text;
+}
+
+.toggle-button {
+    -fx-background-color: c-text;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #374151;
+}
+
+/* ---------- cards ---------- */
+.card {
+    -fx-background-color: c-card;
+    -fx-background-radius: 14;
+    -fx-border-color: c-border;
+    -fx-border-radius: 14;
+    -fx-padding: 16;
+}
+
+.card-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: c-text;
+}
+
+.count-badge {
+    -fx-background-color: #E0E7FF;
+    -fx-text-fill: #3730A3;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+    -fx-background-radius: 10;
+    -fx-padding: 1 8 1 8;
+}
+
+.ghost-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: c-muted;
+    -fx-border-color: c-border;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 3 10 3 10;
+    -fx-cursor: hand;
+}
+
+.ghost-button:hover {
+    -fx-text-fill: c-text;
+    -fx-background-color: #F3F4F6;
+}
+
+/* ---------- lists ---------- */
+.list-view {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.list-view:focused {
+    -fx-background-color: transparent;
+}
+
+.list-cell,
+.list-cell:filled:selected,
+.list-cell:filled:hover,
+.list-cell:filled:selected:focused,
+.list-cell:odd,
+.list-cell:even {
+    -fx-background-color: transparent;
+    -fx-text-fill: c-text;
+}
+
+.user-list .list-cell {
+    -fx-padding: 4 2 4 2;
+}
+
+.user-row {
+    -fx-background-radius: 10;
+    -fx-padding: 9 12 9 10;
+}
+
+.avatar-letter {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.user-name {
+    -fx-font-weight: bold;
+    -fx-font-size: 13.5px;
+    -fx-text-fill: #111827;
+}
+
+.user-details {
+    -fx-font-size: 11px;
+    -fx-text-fill: #374151;
+}
+
+.readonly-tag {
+    -fx-background-color: rgba(0, 0, 0, 0.72);
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 2 7 2 7;
+}
+
+.log-list .list-cell {
+    -fx-padding: 3 2 3 2;
+}
+
+.log-time {
+    -fx-font-family: "Monospaced";
+    -fx-text-fill: #9CA3AF;
+    -fx-font-size: 12px;
+}
+
+.log-level {
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 1 6 1 6;
+    -fx-min-width: 62px;
+    -fx-alignment: center;
+}
+
+.level-system  { -fx-background-color: #EEF2FF; -fx-text-fill: #4338CA; }
+.level-join    { -fx-background-color: #DCFCE7; -fx-text-fill: #166534; }
+.level-leave   { -fx-background-color: #FEF3C7; -fx-text-fill: #92400E; }
+.level-chat    { -fx-background-color: #E0F2FE; -fx-text-fill: #075985; }
+.level-warning { -fx-background-color: #FFEDD5; -fx-text-fill: #9A3412; }
+.level-error   { -fx-background-color: #FEE2E2; -fx-text-fill: #991B1B; }
+
+.log-message {
+    -fx-text-fill: c-text;
+}
+
+.footer {
+    -fx-text-fill: c-muted;
+    -fx-font-size: 11.5px;
+    -fx-padding: 0 4 0 4;
+}
+
+/* ---------- scroll bars ---------- */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #D1D5DB;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}

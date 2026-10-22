@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Convenience aggregator: builds both independent Maven projects with one command.
+    mvn package          (from this folder)
+  Each project also builds on its own:  cd TCPServer && mvn package
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.chatapp</groupId>
+    <artifactId>tcp-chat</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>TCP Chat (server + client)</name>
+
+    <modules>
+        <module>TCPServer</module>
+        <module>TCPClient</module>
+    </modules>
+</project>
