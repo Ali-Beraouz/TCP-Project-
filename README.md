@@ -8,8 +8,10 @@ connected **clients**. Each client runs on its own **virtual thread** (JDK 21), 
 > Author: Ali BERAOUZ
 
 ---
-
+## Links
+1. Video demo (Uploaded to Youtube): https://youtu.be/h8PTQhYCpW0
 ## Contents
+
 1. [Features and requirement mapping](#1-features-and-requirement-mapping)
 2. [Quick start](#2-quick-start)
 3. [Running from IntelliJ IDEA](#3-running-from-intellij-idea)
@@ -42,7 +44,7 @@ connected **clients**. Each client runs on its own **virtual thread** (JDK 21), 
 | **3.3** IP/port from a config file at runtime | `server.properties` / `client.properties`, read when the app starts. No recompilation needed. |
 | **3.3** Model–View separation | `model` packages have **zero JavaFX imports**. Proven two ways: a console view (`--console`) reuses the same model, and the tests run the model with no UI at all. |
 | **4.1** `TCPClient <ServerIPAddress> <PortNumber>`, `TCPServer` | `java -jar TCPClient.jar localhost 3000`, `java -jar TCPServer.jar` |
-| **5** Maven projects, JARs, UML, README | `TCPServer/`, `TCPClient/`, `build.sh` / `build.bat` → `dist/*.jar`, `docs/uml/` |
+| **5** Maven projects, JARs, UML, README | `TCPServer/`, `TCPClient/`, `build.sh` / `build.bat` → `dist/*.jar`, `chat-app/docs/uml/` |
 
 **Extras:**
 - Duplicate usernames are made unique (`sam`, `sam2`).
@@ -158,7 +160,7 @@ chat-app/
 │       ├── model/    ChatClient, ClientListener, ChatMessage
 │       └── view/     ClientApp, ClientController, LoginView, ChatView,
 │                     FxClientListener, ConsoleClient
-└── docs/uml/                    diagrams (PNG + SVG) and the scripts that generate them
+└── chat-app/docs/uml/                    diagrams (PNG + SVG) and the scripts that generate them
 ```
 
 The two projects are deliberately independent: each builds and ships on its own. The small
@@ -233,23 +235,23 @@ You can talk to the server by hand to see the protocol:
 
 ## 7. UML diagrams
 
-All diagrams are in [`docs/uml/`](docs/uml) as PNG and SVG. They are generated from the scripts in
-`docs/uml/src/` (Graphviz + matplotlib): `python3 class_diagrams.py && python3 other_diagrams.py`.
+All diagrams are in [`chat-app/docs/uml/`](chat-app/docs/uml) as PNG and SVG. They are generated from the scripts in
+`chat-app/docs/uml/src/` (Graphviz + matplotlib): `python3 class_diagrams.py && python3 other_diagrams.py`.
 
 ### Class diagram: server
-![Server class diagram](docs/uml/class-diagram-server.png)
+![Server class diagram](chat-app/docs/uml/class-diagram-server.png)
 
 ### Class diagram: client
-![Client class diagram](docs/uml/class-diagram-client.png)
+![Client class diagram](chat-app/docs/uml/class-diagram-client.png)
 
 ### Deployment diagram
-![Deployment diagram](docs/uml/deployment-diagram.png)
+![Deployment diagram](chat-app/docs/uml/deployment-diagram.png)
 
 ### Sequence diagram (optional)
-![Sequence diagram](docs/uml/sequence-diagram.png)
+![Sequence diagram](chat-app/docs/uml/sequence-diagram.png)
 
 ### Use case diagram (optional)
-![Use case diagram](docs/uml/use-case-diagram.png)
+![Use case diagram](chat-app/docs/uml/use-case-diagram.png)
 
 ---
 
