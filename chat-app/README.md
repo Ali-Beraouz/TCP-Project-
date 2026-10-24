@@ -5,7 +5,7 @@ connected **clients**. Each client runs on its own **virtual thread** (JDK 21), 
 **JavaFX** interface laid out with `GridPane` and styled with CSS.
 
 > Mini Project 1: *Multi-Client Chat Application Using Java Sockets* (instructor: El Habib Nfaoui)
-> Author: Youness Aboukad
+> Author: Ali BERAOUZ
 
 ---
 
